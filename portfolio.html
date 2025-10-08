@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmed Munthazir | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+      padding: 30px 15px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #161b22;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Profile Card */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #30363d;
+    }
+
+    .profile-info h1 {
+      font-size: 2rem;
+    }
+
+    .profile-info p {
+      color: #8b949e;
+      font-size: 1rem;
+    }
+
+    /* Sections */
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #58a6ff;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 5px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill, .project {
+      background-color: #0d1117;
+      border: 1px solid #30363d;
+      padding: 15px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .project a {
+      color: #58a6ff;
+    }
+
+    .project:hover, .skill:hover {
+      border-color: #58a6ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Profile Card -->
+    <div class="card profile">
+      <img src="profile.jpg" alt="Ahmed Munthazir Profile Picture">
+      <div class="profile-info">
+        <h1>Ahmed Munthazir</h1>
+        <p>Entrepreneur  | Reader | Editor | Lifelong Learner</p>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I'm a Plus Two student currently studying at Imam Gazzali Academy, Koolivayal, Wayanad, Kerala, India. I come from the beautiful hometown of Kaithakkal, Panamaram in Wayanad. Passionate about writing and editing, I'm always eager to explore language, stories, and creativity.
+      </p>
+    </div>
+
+    <!-- Skills -->
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">writer </div>
+        <div class="skill">Editor</div>
+        <div class="skill">C++</div>
+        <div class="skill">Listener</div>
+        <div class="skill">Network Engineering</div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="card">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Task Manager</h3>
+          <p></p>
+          <a href="#"></a>
+        </div>
+        <div class="project">
+          <h3>Portfolio Website</h3>
+          <p>Built this portfolio using HTML/CSS.</p>
+          <a href="#">View Project ?</a>
+        </div>
+        <div class="project">
+          <h3>Weather App</h3>
+          <p>on work</p>
+          <a href="#"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ahammedmunthasirkp@gmail.com">ahammedmunthasirkp@gmail.com</a></p>
+      <p>Instagram: <a href="#">@ahmed_munthazir</a></p>
+      <p>Phone no: <a href="#">9562789709</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 Ahmed Munthazir. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
